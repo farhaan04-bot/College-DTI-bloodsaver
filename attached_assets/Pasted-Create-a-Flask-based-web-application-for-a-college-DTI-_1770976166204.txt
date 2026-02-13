@@ -1,0 +1,92 @@
+Create a Flask-based web application for a college DTI project titled:
+
+"Intelligent Blood Demand & Donor Availability Prediction System"
+
+The goal is to demonstrate a machine-learning–ready decision-support dashboard for blood banks.
+
+TECH STACK:
+- Python
+- Flask
+- HTML (Jinja templates)
+- CSS
+- Dummy ML logic (no real model yet)
+
+PROJECT STRUCTURE:
+- app.py
+- templates/index.html
+- static/style.css
+
+------------------------------------
+BACKEND REQUIREMENTS (app.py)
+------------------------------------
+1. Use Flask.
+2. Create a function called ml_prediction() that simulates ML output using dummy data.
+3. The function should return:
+   - An alert message (e.g. “B+ blood shortage expected in next 72 hours”)
+   - A dictionary of blood group inventory status (Sufficient / Low / Critical)
+   - A list of recommended donors with:
+     - Donor ID
+     - Blood Group
+     - Probability to Donate (%)
+4. Pass this data to the frontend using render_template().
+5. Add comments showing where real ML models (Logistic Regression, Random Forest) will be integrated later.
+
+------------------------------------
+FRONTEND REQUIREMENTS (index.html)
+------------------------------------
+Create a clean dashboard that displays:
+
+1. Header:
+   - Project title
+   - Subtitle: “ML-based Decision Support Prototype”
+
+2. Blood Inventory Cards:
+   - A+, B+, O+, O-, AB+
+   - Color-coded:
+     - Green = Sufficient
+     - Yellow = Low
+     - Red = Critical
+
+3. Alert Section:
+   - Highlighted alert box showing predicted shortage
+
+4. Recommended Donors Table:
+   - Donor ID
+   - Blood Group
+   - Probability (%)
+
+5. Explainability Section:
+   - “Why this alert?”
+   - Bullet points:
+     - High recent demand
+     - Low inventory
+     - Large donation gap
+
+6. Models Used Section:
+   - Logistic Regression – Donor availability
+   - Random Forest – Blood demand prediction
+   - Gradient Boosting – Accuracy improvement
+
+7. Ethics & DTI Section:
+   - Human-in-the-loop (no automatic actions)
+   - Rare blood group priority
+   - Explainable predictions
+   - Designed for small and rural blood banks
+
+------------------------------------
+STYLE REQUIREMENTS (style.css)
+------------------------------------
+- Simple, clean healthcare UI
+- White background with light red highlights
+- Card-based layout
+- Large readable fonts (mentor-friendly)
+- Responsive design
+- No JavaScript required
+
+------------------------------------
+IMPORTANT NOTES
+------------------------------------
+- This is an academic prototype, not a production system.
+- Use dummy/static data only.
+- Add clear comments in the code.
+- The app should run immediately on Replit using the Run button.
