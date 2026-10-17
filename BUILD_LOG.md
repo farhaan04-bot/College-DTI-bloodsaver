@@ -47,3 +47,10 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Verification:** Source file creation and log update were confirmed on `feat/windows-desktop-foundation`. WPF compilation and Windows launch are not available from the current repository tool session and remain unverified.
 - **Assumptions:** The shown “not configured” states are literal placeholders; no backend connection or functionality is claimed.
 - **Risks / side effects:** No existing web/API/database files changed.
+
+## 2026-10-17 19:27 IST — Step 1 / Milestone 1: Correct WPF-only XAML property
+- **Action:** Removed the unsupported `TextBlock.CharacterSpacing` style setter from the newly added desktop XAML.
+- **Why:** Keep the shell compatible with WPF rather than carrying over a property from other XAML UI frameworks.
+- **Verification:** Updated file commit was confirmed on `feat/windows-desktop-foundation`; a full WPF build remains unavailable here.
+- **Assumptions:** Uses built-in WPF text styling only.
+- **Risks / side effects:** Change is limited to the new `desktop/` file. No existing web/backend code changed.
