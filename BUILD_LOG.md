@@ -61,3 +61,11 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Verification:** Source file creation and build-log update were confirmed on `feat/windows-desktop-foundation`. A Windows/.NET compile and interactive launch test have not been run in this environment.
 - **Assumptions:** Placeholder navigation is the full scope of this milestone.
 - **Risks / side effects:** No existing web, API, database, or package configuration was changed.
+
+## 2026-10-17 19:28 IST — Step 1 / Milestone 1: Local build access check
+- **Action:** Attempted a read-only `git clone --branch feat/windows-desktop-foundation` into `/tmp/bloodsaver-check` to enable local compilation.
+- **Result:** Clone failed because this environment could not resolve `github.com` (`Could not resolve host: github.com`).
+- **Why:** A local checkout is required to run `dotnet build` and interactive tests; this attempt was read-only and wrote no repository files.
+- **Verification:** No build was claimed. Continue verification through GitHub's repository API; actual compilation remains outstanding until a Windows/.NET-capable environment can access the branch.
+- **Assumptions:** None.
+- **Risks / side effects:** No source files changed due to the failed clone.
