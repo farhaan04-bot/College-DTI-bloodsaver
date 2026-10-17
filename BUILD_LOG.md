@@ -26,3 +26,10 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Verification:** Confirmed the file was committed on `feat/windows-desktop-foundation`; compilation has not yet been run because the repository is not locally checked out in this environment.
 - **Assumptions:** Uses the approved .NET 10 WPF target from the plan.
 - **Risks / side effects:** No existing code paths changed. Windows build verification remains outstanding.
+
+## 2026-10-17 19:27 IST — Step 1 / Milestone 1: Add WPF application resources
+- **Action:** Added `App.xaml` with the application startup window and shared neutral/clinical desktop color resources.
+- **Why:** Establish the new desktop visual foundation under the separate `desktop/` directory.
+- **Verification:** File creation and log update were confirmed on `feat/windows-desktop-foundation`. Build/launch verification remains pending.
+- **Assumptions:** The initial palette is a provisional visual foundation, not a finalized design system.
+- **Risks / side effects:** No existing web files, backend routes, database tables, or configs changed.
