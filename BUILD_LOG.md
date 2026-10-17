@@ -33,3 +33,10 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Verification:** File creation and log update were confirmed on `feat/windows-desktop-foundation`. Build/launch verification remains pending.
 - **Assumptions:** The initial palette is a provisional visual foundation, not a finalized design system.
 - **Risks / side effects:** No existing web files, backend routes, database tables, or configs changed.
+
+## 2026-10-17 19:27 IST — Step 1 / Milestone 1: Add application entry point
+- **Action:** Added `App.xaml.cs`, the WPF application partial class.
+- **Why:** Complete the application entry-point pair for the standalone desktop project.
+- **Verification:** File creation and log update were confirmed on `feat/windows-desktop-foundation`. Compilation remains unverified.
+- **Assumptions:** Standard WPF-generated partial-class pattern.
+- **Risks / side effects:** No existing code paths changed.
