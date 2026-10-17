@@ -19,3 +19,10 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Assumptions:** Used the approved base branch `main`.
 - **Risks / side effects:** No existing code paths or data were changed.
 
+
+## 2026-10-17 19:27 IST — Step 1 / Milestone 1: Add WPF project definition
+- **Action:** Added `desktop/BloodSaver.Desktop/BloodSaver.Desktop.csproj` targeting `net10.0-windows` with WPF enabled, nullable reference types, and implicit usings.
+- **Why:** Establish an isolated Windows desktop project without changing existing web/backend files.
+- **Verification:** Confirmed the file was committed on `feat/windows-desktop-foundation`; compilation has not yet been run because the repository is not locally checked out in this environment.
+- **Assumptions:** Uses the approved .NET 10 WPF target from the plan.
+- **Risks / side effects:** No existing code paths changed. Windows build verification remains outstanding.
