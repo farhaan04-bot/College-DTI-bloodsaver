@@ -1,0 +1,25 @@
+<Application x:Class="BloodSaver.Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Color x:Key="CanvasColor">#F3F5F8</Color>
+        <Color x:Key="SurfaceColor">#FFFFFF</Color>
+        <Color x:Key="InkColor">#172033</Color>
+        <Color x:Key="MutedColor">#667085</Color>
+        <Color x:Key="StrokeColor">#E1E6EE</Color>
+        <Color x:Key="AccentColor">#B4233D</Color>
+        <Color x:Key="AccentDarkColor">#8F1D31</Color>
+        <Color x:Key="SuccessColor">#197B5A</Color>
+        <Color x:Key="WarningColor">#9A6700</Color>
+        <SolidColorBrush x:Key="CanvasBrush" Color="{StaticResource CanvasColor}" />
+        <SolidColorBrush x:Key="SurfaceBrush" Color="{StaticResource SurfaceColor}" />
+        <SolidColorBrush x:Key="InkBrush" Color="{StaticResource InkColor}" />
+        <SolidColorBrush x:Key="MutedBrush" Color="{StaticResource MutedColor}" />
+        <SolidColorBrush x:Key="StrokeBrush" Color="{StaticResource StrokeColor}" />
+        <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource AccentColor}" />
+        <SolidColorBrush x:Key="AccentDarkBrush" Color="{StaticResource AccentDarkColor}" />
+        <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource SuccessColor}" />
+        <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource WarningColor}" />
+    </Application.Resources>
+</Application>
