@@ -40,3 +40,10 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Verification:** File creation and log update were confirmed on `feat/windows-desktop-foundation`. Compilation remains unverified.
 - **Assumptions:** Standard WPF-generated partial-class pattern.
 - **Risks / side effects:** No existing code paths changed.
+
+## 2026-10-17 19:27 IST — Step 1 / Milestone 1: Add desktop navigation shell
+- **Action:** Added `MainWindow.xaml` with a new WPF desktop identity, sidebar navigation (Dashboard, Sync Center, Organizations, Settings), connection-state placeholder, and clearly labeled foundation/placeholder content.
+- **Why:** Provide the approved native-style desktop shell without embedding the existing website or inventing live data.
+- **Verification:** Source file creation and log update were confirmed on `feat/windows-desktop-foundation`. WPF compilation and Windows launch are not available from the current repository tool session and remain unverified.
+- **Assumptions:** The shown “not configured” states are literal placeholders; no backend connection or functionality is claimed.
+- **Risks / side effects:** No existing web/API/database files changed.
