@@ -69,3 +69,11 @@ All timestamps use Asia/Kolkata (UTC+05:30). This log records repository actions
 - **Verification:** No build was claimed. Continue verification through GitHub's repository API; actual compilation remains outstanding until a Windows/.NET-capable environment can access the branch.
 - **Assumptions:** None.
 - **Risks / side effects:** No source files changed due to the failed clone.
+
+## 2026-10-17 19:29 IST — Step 1 / Milestone 1: Checkpoint verification
+- **Action:** Compared `feat/windows-desktop-foundation` against `main` through GitHub. Re-fetched the project files and performed source-level checks for the .NET Windows target, WPF enablement, navigation handler names, absence of the unsupported WPF `CharacterSpacing` property, and balanced opening/closing Window/Application markup.
+- **Files changed in branch vs main:** Only new `BUILD_LOG.md` and five files under `desktop/BloodSaver.Desktop/`. No existing repository file is modified or deleted.
+- **Why:** Confirm the milestone remained isolated/additive and the source structure is internally consistent before stopping for the checkpoint.
+- **Verification result:** GitHub comparison reports branch ahead of `main`, with six paths changed and no existing-path modifications. Source-level checks passed. No automated tests exist in the repository tree. A real `dotnet build` or Windows launch test was not run because local clone failed with DNS resolution error; compilation is therefore **not verified**.
+- **Assumptions:** Source-level checks are not a substitute for compilation or interactive testing.
+- **Risks / side effects:** Build/runtime issues may still exist until compiled on a Windows/.NET 10 environment. Existing web functionality was not changed.
